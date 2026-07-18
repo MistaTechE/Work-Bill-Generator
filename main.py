@@ -10,17 +10,9 @@ the 2025-26 school year, 26-101 for the 2026-27 school year etc), and writes tho
 CSV so numbers are never reused.
 """
 from gui import BillGeneratorApp
+import tkinter as tk
 
 def main():
-    # Optional CLI mode: python generate_bills.py path/to/file.csv
-    if len(sys.argv) > 1:
-        csv_path = Path(sys.argv[1])
-        if not csv_path.exists():
-            print(f"File not found: {csv_path}")
-            sys.exit(1)
-        process_csv(csv_path)
-        return
-
     root = tk.Tk()
     BillGeneratorApp(root)
     root.mainloop()

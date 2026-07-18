@@ -1,8 +1,10 @@
 #pdf_fill.py
-
 # ---------------------------------------------------------------------------
 # PDF generation
 # ---------------------------------------------------------------------------
+from config import today_mmddyyyy, format_money,
+from pypdf import PdfReader, PdfWriter
+from datetime import date
 
 def build_bill_pdf(row: dict, output_path: Path):
     bill_date = row.get(COL_BILL_CREATED, "").strip() or today_mmddyyyy()

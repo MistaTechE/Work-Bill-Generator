@@ -5,6 +5,7 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox, scrolledtext
 from process_csv import process_csv
+from pathlib import Path
 
 class BillGeneratorApp:
     def __init__(self, root):

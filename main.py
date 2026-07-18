@@ -9,6 +9,8 @@ one, using the school-year format (25-101 for
 the 2025-26 school year, 26-101 for the 2026-27 school year etc), and writes those new numbers back into the
 CSV so numbers are never reused.
 """
+from gui import BillGeneratorApp
+
 def main():
     # Optional CLI mode: python generate_bills.py path/to/file.csv
     if len(sys.argv) > 1:

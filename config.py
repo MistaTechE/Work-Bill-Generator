@@ -3,9 +3,7 @@ import csv
 import os
 import re
 import sys
-from datetime import date
 from pathlib import Path
-from pypdf import PdfReader, PdfWriter
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 TEMPLATE_PATH = SCRIPT_DIR / "template" / "Form_99_Bill_Template.pdf"
